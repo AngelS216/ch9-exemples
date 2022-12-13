@@ -1,10 +1,11 @@
-def syntax_error(some_list)
+def syntax_error(some_list):
+    #Il manquait un : à la fin de some_list)
 
     return sorted(some_list)
 
 
 def sem_error(x, y):
-
+    #On ne peut pas assuré que les varibales sont de même type et qu'ils peuvent s'additioner
     return x + y
 
 
@@ -13,7 +14,7 @@ def logical_error(count):
     while count > 0:
         x += 1
         count = x
-
+    #Boucle infini, count est tjs > 0 car x ne fait qu'augmenter de 1 à chaque exécution de ce boucle while
     return x
 
 
